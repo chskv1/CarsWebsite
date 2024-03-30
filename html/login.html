@@ -8,21 +8,31 @@
 <body>
 <h1 class="logo">cars menager aplication</h1>
 <div class="loginramki">
-    <p>mail</p>
-    <form><input type="email"></form> <br>
-    <p>password</p>
-    <form><input type="password"></form>
-    <form><button class="btn" type="submit" method="post">log in</button></form>
+    <form action="" method="post">
+    <label for="email">mail</label>
+    <input type="email"> <br>
+    <label  for="password">password</label>
+   <input type="password"></form>
+    <button class="btn" type="submit" method="post">log in</button>
+    </form>
 </div>
-<div class="loginramki">
-    <p>mail</p>
-    <form><input type="email"></form>
-    <p>password</p>
-    <form><input type="password"></form>
-    <p>repeat password</p>
-    <form><input type="password"></form>
-    <form><button class="btn" type="submit" method="post">register</button></form>
+<<div class="loginramki">
 
+    <form action="" method="post">
+        <label for="email">Email:</label>
+        <input type="email" name="email"  id="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[A-Z])(?=.*\W)(?=.*[a-z]).{8,}"
+               title="Password must contain at least 8 characters, including at least one uppercase letter, one lowercase letter, one number, and one special character"
+               required>
+
+        <label for="repeat_password">Repeat Password:</label>
+        <input type="password" name="repeat_password" id="repeat_password" required>
+
+        <button class="btn" type="submit" >Register</button>
+    </form>
 </div>
+
 </body>
 </html>
